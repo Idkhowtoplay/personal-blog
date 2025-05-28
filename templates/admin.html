@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+{% block head %} {{ super() }} {% endblock %}
+{% block content %}
+<h5 class="top-left">Personal Blog</h5>
+<nav class="navbar">
+    <ul>
+        <li><a href="/new">+add</a></li>
+    </ul>
+</nav>
+<div class="result">
+    {% for i in result %}
+    <div class="item">
+        <span class="title">{{ i.title }}</span>
+        <div class="action">
+            <a href="/edit/{{loop.index}}">Edit</a>
+            <form action="/delete/{{loop.index}}" method="POST">
+                <button type="submit">Delete</button>
+            </form>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

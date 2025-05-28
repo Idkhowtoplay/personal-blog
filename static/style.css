@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    border: 2px solid black;
+    padding: 50px;
+    margin: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+.top-left{
+    position: absolute;
+    font-family: monospace;
+    font-size: large;
+    bottom: 330px;
+    left: 10px;
+}
+.top-title{
+    position: absolute;
+    font-family: monospace;
+    font-size: xx-large;
+    bottom: 320px;
+    left: 10px;
+}
+.box form{
+    position: absolute;
+    font-family: monospace;
+    font-size: smaller;
+    top: 60px;
+    left: 20px;
+}
+.box form input{
+    width: 250px;
+    height: 25px;
+}
+.box form input[name='date']{
+    width: 253px;
+    font-size: medium;
+}
+.box form textarea{
+    vertical-align: top;
+    text-align: left;
+    font-family: monospace;
+    font-size: medium;
+    width: 253px;
+    height: 190px;
+}
+.box form button{
+    font-family: monospace;
+    color: black;
+    display: inline-block;
+    border-color: black;
+    padding: 1px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+}
+.box .result .item{
+    font-family: monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.box .result .item .title{
+    position: relative;
+    top: 10px;
+    right: 38px;
+    display: inline-block;
+    max-width: 70px;
+    white-space: nowrap;
+
+}
+.box .result .action{
+    display: flex;
+    gap: 15px;
+}
+.box .result .action a{
+    position: relative;
+    top: 10px;
+    left: 60px;
+    text-decoration: underline;
+}
+.box .result .action form{
+    cursor: pointer; 
+    position: relative; 
+    font-family: monospace;
+    top: 5px; 
+    left: 50px;
+}
+.box .result .action form button{
+    font-size: medium;
+    border: none;
+    color: #551A8b;
+    text-decoration: underline;
+}
+.box .article .list{
+    font-family: monospace;
+}
+.box .article .list a{
+    display: flex;
+    position: relative;
+    color: black;
+    top: 15px;
+    right: 40px;
+}
+.box .article .list .date{
+    position: relative;
+    left: 150px;
+}
+.box .content{
+    font-family: 'Segoe UI', sans-serif;
+    position: relative;
+    right: 38px;
+    bottom: 30px;
+    width: 270px;
+    margin: auto;
+    line-height: 1.6;
+    
+}
+.box .content p{
+    font-size: 10px;
+    position: relative;
+    display: flex;
+    
+}
+.box .content .date{
+    font-family: monospace;
+    font-size: medium;
+}
+.box .login{
+    left: 5px;
+    text-align: center;
+    top: 130px;
+}
+.box .login div{
+    font-size: medium;
+}
+.box .center{
+    position: relative;
+    text-align: center;
+    font-family: monospace;
+    font-size: large;
+    top: 10px;
+}
+.navbar{
+    position: absolute;
+    right: 80px;
+    display: flex;
+}
+.navbar ul{
+    list-style-type: none;
+    gap: 25px;
+    display: flex;
+}
+.navbar ul li{
+    position: relative;
+    left: 70px;
+    bottom: 47px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: larger;
+    font-family: monospace;
+    color: black;
+}
+

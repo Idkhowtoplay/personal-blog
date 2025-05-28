@@ -1,0 +1,9 @@
+{% extends "index.html" %}
+{% block head %} {{super ()}} {% endblock %}
+{% block content %}
+<h5 class="top-title">{{article.title}}</h5>
+<div class="content">
+    <p class="date">{{date}}</p>
+    <p>{{article.content}}</p>
+</div>
+{% endblock %}

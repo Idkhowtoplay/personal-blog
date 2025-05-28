@@ -1,0 +1,11 @@
+{% extends "index.html" %}
+{% block head %} {{ super() }} {% endblock %}
+{% block content %}
+<h5 class="top-left">Update Article</h5>
+<form method="POST">
+    <input type="text" id="title" name="title" value="{{article.title}}"><br><br>
+    <input type="date" id="date" name="date" value="{{article.date}}"><br><br>
+    <textarea placeholder="content" id="content" name="content">{{article.content}}</textarea><br><br>
+    <button type="submit">Publish</button>
+</form>
+{% endblock %}

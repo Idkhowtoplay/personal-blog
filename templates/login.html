@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+{% block head %} {{ super() }} {% endblock %}
+{% block content %}
+<h5 class="center">LOGIN</h5>
+<form method="POST" class="login">
+    <label for="User">Login</label><br>
+    <input type="text" id="name" name="name" placeholder="user"><br>
+    <label for="password">Password</label>
+    <input type="password" id="pass" name="pass" placeholder="password"><br><br>
+    <button type="submit">Login</button>
+    <div>
+        {% if result %}
+            <p>{{result}}</p>
+        {% endif %}
+    </div>
+</form>
+
+{% endblock %}
