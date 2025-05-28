@@ -54,12 +54,12 @@ def login():
 
         if name == "emanaon" and password == "321":
             session['user'] = True
-            return redirect("/login/admin")
+            return redirect("/admin")
         else:
             result = "Username or password is inavalid"
     return render_template("login.html", result=result)
 
-@app.route('/login/admin')
+@app.route('/admin')
 def index():
     if session.get("user") is not True:
         return redirect("/login")
@@ -77,7 +77,7 @@ def new():
         }
         store.append(add)
         save_json(store)
-        return redirect("/login/admin")
+        return redirect("/admin")
     return render_template("add.html")
 
 @app.route("/edit/<int:edit_id>", methods = ["GET", "POST"])
