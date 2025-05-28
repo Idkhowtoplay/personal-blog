@@ -13,3 +13,10 @@ For more information: https://roadmap.sh/projects/personal-blog
 
    ```
    py app.py
+# Usage
+- Home Page: `http://127.0.0.1:5000/`
+- Article Page: `http://127.0.0.1:5000/article/<id>`
+- Admin Login: `http://127.0.0.1:5000/login`
+- New Article: `http://127.0.0.1:5000/new`
+- Edit Article: `http://127.0.0.1:5000/edit/<edit_id>`
+
